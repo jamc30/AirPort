@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ListaTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="105" id="P4V-vK-95K" customClass="ListaTableViewCell" customModule="AirPort" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="105"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="listcell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P4V-vK-95K" id="raf-p8-faQ">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRD-WE-hyx">
+                        <rect key="frame" x="167" y="16" width="228" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="UKy-r9-cJn"/>
+                            <constraint firstAttribute="width" constant="228" id="qPQ-Zn-jAV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcM-pt-n9e">
+                        <rect key="frame" x="167" y="61" width="228" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2Ax-OR-59o"/>
+                            <constraint firstAttribute="width" constant="228" id="5Yi-XY-kmc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OzC-bf-yum">
+                        <rect key="frame" x="20" y="18" width="129" height="15.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15.5" id="KLt-q8-lkr"/>
+                            <constraint firstAttribute="width" constant="129" id="dc4-26-pQv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="municipalityName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRF-hx-m5d">
+                        <rect key="frame" x="20" y="61" width="129" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="crI-fi-3dQ"/>
+                            <constraint firstAttribute="height" constant="21" id="ssp-dE-nCM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OzC-bf-yum" firstAttribute="trailing" secondItem="LRF-hx-m5d" secondAttribute="trailing" id="0sL-CS-le6"/>
+                    <constraint firstItem="LRF-hx-m5d" firstAttribute="leading" secondItem="raf-p8-faQ" secondAttribute="leading" constant="20" symbolic="YES" id="CEE-Sq-6WG"/>
+                    <constraint firstAttribute="trailing" secondItem="rRD-WE-hyx" secondAttribute="trailing" constant="32" id="GGb-aZ-u50"/>
+                    <constraint firstItem="rRD-WE-hyx" firstAttribute="leading" secondItem="jcM-pt-n9e" secondAttribute="leading" id="GJv-4s-geV"/>
+                    <constraint firstItem="jcM-pt-n9e" firstAttribute="top" secondItem="rRD-WE-hyx" secondAttribute="bottom" constant="20" id="OzB-6x-wxr"/>
+                    <constraint firstItem="OzC-bf-yum" firstAttribute="leading" secondItem="LRF-hx-m5d" secondAttribute="leading" id="WYG-WO-Y8z"/>
+                    <constraint firstItem="rRD-WE-hyx" firstAttribute="leading" secondItem="OzC-bf-yum" secondAttribute="trailing" constant="18" id="X6V-N4-gLY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="rRD-WE-hyx" secondAttribute="trailing" constant="12" id="Zei-fw-md4"/>
+                    <constraint firstItem="OzC-bf-yum" firstAttribute="top" secondItem="raf-p8-faQ" secondAttribute="top" constant="18" id="h4s-qd-AJW"/>
+                    <constraint firstItem="OzC-bf-yum" firstAttribute="leading" secondItem="raf-p8-faQ" secondAttribute="leadingMargin" id="iW6-Gy-rPm"/>
+                    <constraint firstItem="LRF-hx-m5d" firstAttribute="top" secondItem="OzC-bf-yum" secondAttribute="bottom" constant="27.5" id="ifa-sc-cJu"/>
+                    <constraint firstAttribute="bottom" secondItem="jcM-pt-n9e" secondAttribute="bottom" constant="23" id="k2U-eM-NOh"/>
+                    <constraint firstItem="rRD-WE-hyx" firstAttribute="top" secondItem="raf-p8-faQ" secondAttribute="top" constant="16" id="t23-lu-S4V"/>
+                    <constraint firstAttribute="trailing" secondItem="jcM-pt-n9e" secondAttribute="trailing" constant="32" id="w9J-o6-bUS"/>
+                    <constraint firstItem="OzC-bf-yum" firstAttribute="leading" secondItem="raf-p8-faQ" secondAttribute="leading" constant="20" symbolic="YES" id="zHD-z5-cFi"/>
+                    <constraint firstAttribute="bottom" secondItem="LRF-hx-m5d" secondAttribute="bottom" constant="23" id="zgo-of-sXd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="municipalLabel" destination="jcM-pt-n9e" id="d31-L6-i3T"/>
+                <outlet property="nameLabel" destination="rRD-WE-hyx" id="AXd-7g-14p"/>
+            </connections>
+            <point key="canvasLocation" x="-368.84057971014494" y="72.65625"/>
+        </tableViewCell>
+    </objects>
+</document>
